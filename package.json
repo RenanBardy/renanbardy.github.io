@@ -1,0 +1,27 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint . --fix & stylelint css/ --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenanBardy/me.git"
+  },
+  "author": "Renan Bardy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenanBardy/me/issues"
+  },
+  "homepage": "https://github.com/RenanBardy/me#readme",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.27.0",
+    "@html-eslint/parser": "^0.27.0",
+    "eslint": "^9.10.0",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.9.0",
+    "stylelint-prettier": "^5.0.2"
+  }
+}

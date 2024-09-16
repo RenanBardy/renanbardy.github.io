@@ -1,0 +1,153 @@
+:root {
+  --black: #10131e;
+  --dark-silver: #3b3d49;
+  --light-silver: #8e8e9f;
+  --white: #fbfbfd;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  padding: 24px 0;
+}
+
+main {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 800px;
+  width: 90vw;
+  position: relative;
+}
+
+main h1,
+main h2 {
+  margin: 0;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 400;
+  flex-wrap: nowrap;
+}
+
+main h2 {
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main .contacts {
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 100%;
+  gap: 12px;
+}
+
+.dialog {
+  width: 100%;
+  margin: 52px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.dialog p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid var(--dark-silver);
+  margin-bottom: 32px;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.careers {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.careers .disclaimer {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--light-silver);
+  margin-bottom: 24px;
+}
+
+.careers .content {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.careers .content .position {
+  position: relative;
+
+  /* overflow: hidden; */
+}
+
+.careers .content .position h3,
+.careers .content .position h4 {
+  position: relative;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.careers .content .position h4 {
+  color: var(--light-silver);
+}
+
+.careers .content .position .texture {
+  position: absolute;
+  top: -40px;
+  left: 10%;
+  height: 300%;
+}
+
+@media screen and (width >= 600px) {
+  .careers .content,
+  .dialog {
+    flex-direction: row;
+  }
+
+  .dialog .profile {
+    margin-bottom: 0;
+  }
+}
