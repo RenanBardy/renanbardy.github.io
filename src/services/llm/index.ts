@@ -1,7 +1,7 @@
 import {
   type ChatCompletionChunk,
 } from '@mlc-ai/web-llm'
-import { ragService } from '@/services/rag/ragService'
+import { ragService } from '@/services/rag'
 import { createEngineLoader } from './engineLoader'
 import { createChatMessages } from './messageFactory'
 import { consumeChatStream } from './stream'

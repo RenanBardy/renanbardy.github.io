@@ -1,15 +1,15 @@
 import type { FC, FormEvent, RefObject } from 'react'
-import { Button } from '@/presentational/common/Button'
+import { Button } from '@/components/common/Button'
 import type { ChatMessage } from '@/types/chat'
 import {
   Hint,
-  ChatPanelWrapper, 
-  MessageList, 
-  EmptyState, 
-  MessageCard, 
-  MessageMeta, 
-  Composer, 
-  TextArea, 
+  ChatPanelWrapper,
+  MessageList,
+  EmptyState,
+  MessageCard,
+  MessageMeta,
+  Composer,
+  TextArea,
   Actions
 } from './style'
 
@@ -38,7 +38,7 @@ export const ChatPanel: FC<{
 }) => {
   const isDisabled = Boolean(isSending || input.trim() === '' || chatError)
   const isLoading = chatStatus !== 'ready'
-  
+
   return (
     <ChatPanelWrapper>
       <MessageList ref={messageListRef}>

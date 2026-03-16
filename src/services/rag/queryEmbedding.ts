@@ -1,6 +1,6 @@
 import constants from '@/config/constants'
-import { embedText } from '@/features/rag/embedder'
-import { readCache, writeCache } from '@/features/rag/storage'
+import { embedText } from './embed'
+import { readCache, writeCache } from './cache'
 
 export const createQueryEmbedding = async (text: string) => {
   const cacheKey = `${constants.RAG_CACHE_KEYS.queryVectors}:${text}`

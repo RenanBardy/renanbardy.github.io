@@ -1,4 +1,4 @@
-import { createRagIndex } from './artifacts'
+import { createRagIndex } from './load'
 import { createQueryEmbedding } from './queryEmbedding'
 import { searchRagIndex } from './search'
 import type { RagIndex, RagService } from './types'
@@ -30,5 +30,4 @@ const createRagService = (): RagService => {
 
 export const ragService = createRagService()
 
-export type { SearchOptions } from './types'
-export type { RagSearchResult } from '@/features/rag/types'
+export type { SearchOptions, RagSearchResult } from './types'

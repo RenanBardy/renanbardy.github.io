@@ -1,5 +1,5 @@
 import constants from '@/config/constants'
-import { buildContextBlocks, rankChunks } from '@/features/rag/ranking'
+import { buildContextBlocks, rankChunks } from './rank'
 import type { RagIndex, SearchOptions } from './types'
 import { createQueryEmbedding } from './queryEmbedding'
 

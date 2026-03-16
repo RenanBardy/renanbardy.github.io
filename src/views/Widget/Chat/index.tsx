@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type FC, type FormEvent } from 'react'
-import { Layout } from '@/presentational/Layout'
-import { ChatPanel } from '@/presentational/chat/Panel'
+import { Layout } from '@/components/Layout'
+import { ChatPanel } from '@/components/chat/Panel'
 import { chatService, type ChatHistoryEntry } from '@/services/llm'
 import type { ChatMessage } from '@/types/chat'
 
