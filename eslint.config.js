@@ -17,10 +17,10 @@ export default defineConfig([
     ],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
-    },
-    rules: {
-      '@typescript-eslint/indent': ['error', 2],
+      globals: {
+        ...globals.browser,
+        ...globals.worker,
+      },
     },
   },
 ])

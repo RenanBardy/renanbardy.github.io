@@ -1,0 +1,54 @@
+[
+  {
+    "id": "f75f4dda0952",
+    "kind": "experience",
+    "title": "Experiências profissionais",
+    "tags": [
+      "experiencia",
+      "carreira",
+      "atuacao"
+    ],
+    "text": "Minha trajetória profissional está ligada à criação de aplicações web e produtos digitais.\n\nTenho experiência em desenvolvimento frontend com React e TypeScript, definição de arquitetura de aplicações e organização de código para evolução contínua.\n\nTambém atuo na integração de capacidades de IA em produtos, avaliando trade-offs de performance, privacidade, custo e experiência de uso.",
+    "priority": 2,
+    "source": "content/experiences.md"
+  },
+  {
+    "id": "35635ce5ac99",
+    "kind": "profile",
+    "title": "Perfil profissional",
+    "tags": [
+      "perfil",
+      "resumo",
+      "carreira"
+    ],
+    "text": "Sou Renan Bardy, profissional de tecnologia com foco em produto, engenharia de software e uso prático de IA em experiências digitais.\n\nAtuo na interseção entre desenvolvimento de software, arquitetura de frontend e construção de produtos orientados a valor.\n\nTenho interesse em criar interfaces claras, sistemas sustentáveis e soluções que consigam sair da ideia para uma entrega funcional com qualidade.",
+    "priority": 1,
+    "source": "content/profile.md"
+  },
+  {
+    "id": "40cc1d115e88",
+    "kind": "project",
+    "title": "Projetos e iniciativas",
+    "tags": [
+      "projetos",
+      "portfolio",
+      "produtos"
+    ],
+    "text": "Participei da construção de interfaces e aplicações web com foco em experiência de usuário, organização técnica e clareza de manutenção.\n\nTambém exploro projetos pessoais voltados a IA aplicada no cliente, incluindo experiências com inferência local no navegador, RAG estático e fluxos sem backend.\n\nTenho interesse especial em projetos que combinam autonomia local, privacidade e distribuição simples.",
+    "priority": 2,
+    "source": "content/projects.md"
+  },
+  {
+    "id": "503ffb9b1804",
+    "kind": "skill",
+    "title": "Skills e conhecimentos",
+    "tags": [
+      "skills",
+      "stack",
+      "conhecimentos"
+    ],
+    "text": "Minhas skills incluem React, TypeScript, Vite, arquitetura frontend, componentização, modelagem de interfaces e integração de LLMs em aplicações web.\n\nTenho familiaridade com criação de SPAs, organização de estado de interface, design systems leves e workflows de build.\n\nTambém trabalho com análise pragmática de requisitos, definição de escopo técnico e implementação incremental de produto.",
+    "priority": 3,
+    "source": "content/skills.md"
+  }
+]
