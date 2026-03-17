@@ -17,6 +17,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
+    env:
+      VITE_CHAT_MODEL: ${{ vars.VITE_CHAT_MODEL }}
+      VITE_RAG_EMBEDDING_MODEL: ${{ vars.VITE_RAG_EMBEDDING_MODEL }}
+      VITE_RAG_INDEX_URL: ${{ vars.VITE_RAG_INDEX_URL }}
+      VITE_RAG_CHUNKS_URL: ${{ vars.VITE_RAG_CHUNKS_URL }}
+      VITE_RAG_EMBEDDINGS_URL: ${{ vars.VITE_RAG_EMBEDDINGS_URL }}
+      VITE_RAG_INDEX_NAME: ${{ vars.VITE_RAG_INDEX_NAME }}
+      VITE_RAG_INDEX_VERSION: ${{ vars.VITE_RAG_INDEX_VERSION }}
+      VITE_RAG_INDEX_ID: ${{ vars.VITE_RAG_INDEX_ID }}
+      VITE_RAG_INDEX_TYPE: ${{ vars.VITE_RAG_INDEX_TYPE }}
+      VITE_RAG_INDEX_SIZE: ${{ vars.VITE_RAG_INDEX_SIZE }}
     steps:
       - uses: actions/checkout@v4
 

@@ -59,6 +59,8 @@ export const Composer = styled.form`
   gap: 12px;
   justify-content: end;
   padding-bottom: 36px;
+  width: 100%;
+  overflow: hidden;
 `
 
 export const TextArea = styled.textarea`
@@ -95,6 +97,7 @@ export const DefaultQuestions = styled.div`
   align-items: center;
   opacity: 0.2;
   transition: all 0.4s ease;
+  width: 100%;
   &:hover {
     opacity: 1;
   }
