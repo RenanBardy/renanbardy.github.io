@@ -45,6 +45,7 @@ export const MessageCard = styled.article<{ $role: 'user' | 'assistant' }>`
   color: ${({ $role }) => ($role === 'user' ? 'var(--color-text-primary)' : 'var(--color-text-primary)')};
   white-space: pre-wrap;
   line-height: 1.55;
+  margin-bottom: 12px;
 `
 
 export const MessageMeta = styled.div`
