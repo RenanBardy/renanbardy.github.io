@@ -1,4 +1,5 @@
 import type { ChatCompletionChunk } from '@mlc-ai/web-llm'
+import { guardResponse } from './responseGuard'
 
 export const consumeChatStream = async ({
   stream,
@@ -21,5 +22,5 @@ export const consumeChatStream = async ({
     onToken?.(finalText, sources)
   }
 
-  return finalText.trim()
+  return guardResponse(finalText)
 }

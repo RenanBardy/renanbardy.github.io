@@ -1,4 +1,4 @@
-import type { FC, FormEvent, RefObject } from 'react'
+import { useRef, type FC, type FormEvent, type RefObject } from 'react'
 import { Button } from '@/components/common/Button'
 import type { ChatMessage } from '@/types/chat'
 import {
@@ -11,10 +11,11 @@ import {
   Composer,
   TextArea,
   Actions,
-  DefaultQuestions
+  DefaultQuestions,
 } from './style'
+import { LoadingText } from '@/components/common/LoadingText'
 
-
+const placeholder = "Ask me anything about my professional career, projects, skills."
 
 export const ChatPanel: FC<{
   defaultQuestions: string[]
@@ -41,22 +42,23 @@ export const ChatPanel: FC<{
 }) => {
   const isDisabled = Boolean(isSending || input.trim() === '' || chatError)
   const isLoading = chatStatus !== 'ready'
+  const textAreaRef = useRef<HTMLTextAreaElement>(null)
 
   return (
     <ChatPanelWrapper>
       <MessageList ref={messageListRef}>
         {messages.length === 0 ? (
           <EmptyState>
-            Hello, I'm Renan Bardy<small>You can ask me anything about my professional career, projects, skills or context.</small>
+            Hello, I'm Renan Bardy<small>{placeholder}</small>
           </EmptyState>
         ) : null}
 
         {messages.map((message) => (
           <MessageCard key={message.id} $role={message.role}>
-            {message.content || '...'}
+            {message.content || <LoadingText />}
             {message.sources && message.sources.length > 0 ? (
               <MessageMeta>
-                Fontes: {Array.from(new Set(message.sources)).join(', ')}
+                Sources: {Array.from(new Set(message.sources)).join(', ')}
               </MessageMeta>
             ) : null}
           </MessageCard>
@@ -67,17 +69,22 @@ export const ChatPanel: FC<{
         <DefaultQuestions>
           <div className="title">Suggestions:</div>
           {defaultQuestions.map((question) => (
-            <div key={question} className="item" onClick={() => onInputChange(question)}>
+            <div key={question} className="item" onClick={() => {
+              onInputChange(question);
+              textAreaRef.current?.focus()
+            }}>
               {question}
             </div>
           ))}
         </DefaultQuestions>
-        <TextArea onKeyDown={(e) => {
+        <TextArea
+        ref={textAreaRef}
+        onKeyDown={(e) => {
           if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault()
             onSubmit(e)
           }
-        }} value={input} onChange={(event) => onInputChange(event.target.value)} placeholder="Ask me anything about my professional career, projects, skills or context." disabled={isSending} />
+        }} value={input} onChange={(event) => onInputChange(event.target.value)} placeholder={placeholder} disabled={isSending} />
         <Actions>
           <div>
             <Button type="button" variant="secondary" onClick={onReset}>

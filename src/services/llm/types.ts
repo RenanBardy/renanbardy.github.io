@@ -5,9 +5,12 @@ export interface ChatHistoryEntry {
   content: string
 }
 
+export type ChatContextMode = 'rag' | 'context'
+
 export interface SendMessageInput {
   question: string
   history: ChatHistoryEntry[]
+  contextMode: ChatContextMode
   onToken?: (partial: string, sources: string[]) => void
 }
 

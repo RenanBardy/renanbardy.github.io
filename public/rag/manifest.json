@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-17T00:34:18.459Z",
+  "generatedAt": "2026-03-17T12:46:50.945Z",
   "contentFiles": 4,
-  "chunkCount": 4,
+  "chunkCount": 12,
   "embeddingModel": "local-hash-embedding-v1",
   "embeddingDimensions": 256,
   "chunkConfig": {

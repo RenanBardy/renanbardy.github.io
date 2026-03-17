@@ -12,7 +12,7 @@ export const ChatPanelWrapper = styled.section`
 
 export const MessageList = styled.div`
   gap: 8px;
-  height: 50vh;
+  height: 100%;
   overflow: auto;
   padding-right: 4px;
 `
@@ -35,7 +35,7 @@ export const MessageCard = styled.article<{ $role: 'user' | 'assistant' }>`
   display: flex;
   flex-direction: column;
   justify-self: ${({ $role }) => ($role === 'user' ? 'end' : 'start')};
-  max-width: min(78ch, 100%);
+  max-width: 100%;
   padding: ${({ $role }) => ($role === 'user' ? '12px 22px' : '0')};
   border-radius: calc(var(--border-radius) * 4);
   height: auto;
@@ -61,7 +61,9 @@ export const Composer = styled.form`
   padding-bottom: 36px;
 `
 
-export const TextArea = styled.input`
+export const TextArea = styled.textarea`
+  resize: none;
+  height: 100px;
   width: 100%;
   border-radius: calc(var(--border-radius) * 4);
   background: var(--background-color-secondary);
@@ -82,7 +84,7 @@ export const Actions = styled.div`
 
 export const Hint = styled.p`
   margin: 0;
-  color: #6b7280;
+  color: var(--color-text-secondary);
 `
 
 export const DefaultQuestions = styled.div`

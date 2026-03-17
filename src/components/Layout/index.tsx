@@ -13,7 +13,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
     <Page>
       <Header>
         <a href="https://github.com/RenanBardy/renanbardy.github.io" target="_blank" rel="noopener noreferrer"><GithubIcon /></a>
-        <a href="https://www.linkedin.com/in/renan-bardy-33874692/" target="_blank" rel="noopener noreferrer"><LinkedinIcon /></a>
+        <a href="https://www.linkedin.com/in/renan-bardy-33874692/" target="_blank" rel="noopener noreferrer" style={{ top: -2}}><LinkedinIcon /></a>
         <a href="mailto:renan.bardy@gmail.com" target="_blank" rel="noopener noreferrer"><EmailIcon /></a>
       </Header>
       <LayoutShell>

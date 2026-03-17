@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState, type FC, type FormEvent } from 'react'
 import { Layout } from '@/components/Layout'
-import { ChatPanel } from '@/components/chat/Panel'
-import { chatService, type ChatHistoryEntry } from '@/services/llm'
+import { ChatPanel } from '@/components/chat/Panel/Panel'
+import {
+  chatService,
+  type ChatHistoryEntry,
+  type ChatContextMode,
+} from '@/services/llm'
 import type { ChatMessage } from '@/types/chat'
+import { ContextMode } from '@/components/chat/ContextMode'
 
 const formatProgress = (label: string | undefined) =>
   label ? label.replace(/\s+/g, ' ').trim() : 'carregando'
@@ -32,6 +37,7 @@ export const Chat: FC = () => {
   const [chatStatus, setChatStatus] = useState('inicializando')
   const [chatError, setChatError] = useState<string | null>(null)
   const [isSending, setIsSending] = useState(false)
+  const [contextMode, setContextMode] = useState<ChatContextMode>('context')
   const messageListRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -90,6 +96,7 @@ export const Chat: FC = () => {
       const response = await chatService.sendMessage({
         question,
         history,
+        contextMode,
         onToken: (partial, sources) => {
           setMessages((current) =>
             current.map((message) =>
@@ -139,6 +146,7 @@ export const Chat: FC = () => {
 
   return (
     <Layout>
+      <ContextMode contextMode={contextMode} onContextModeChange={setContextMode} />
       <ChatPanel
         defaultQuestions={defaultQuestions}
         messages={messages}

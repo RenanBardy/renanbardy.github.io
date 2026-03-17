@@ -1,29 +1,32 @@
 import {
   type ChatCompletionChunk,
 } from '@mlc-ai/web-llm'
-import { ragService } from '@/services/rag'
 import { createEngineLoader } from './engineLoader'
+import { createContextProvider } from './contextProvider'
 import { createChatMessages } from './messageFactory'
 import { consumeChatStream } from './stream'
 import type { ChatService } from './types'
 
 const createChatService = (): ChatService => {
   const { loadChatModel: loadEngineModel, getLoadedEngine } = createEngineLoader()
+  const contextProvider = createContextProvider()
 
   return {
     async loadChatModel(onProgress) {
-      await ragService.loadRagIndex()
       await loadEngineModel(onProgress)
     },
 
-    async sendMessage({ question, history, onToken }) {
+    async sendMessage({ question, history, contextMode, onToken }) {
       await loadEngineModel()
       const engine = await getLoadedEngine()
-      const { results, contextBlocks } = await ragService.search(question)
-      const sources = results.map((result) => result.chunk.source)
+      const { contextBlocks, sources, contextLabel } = await contextProvider.load(
+        contextMode,
+        question
+      )
       const messages = createChatMessages({
         question,
         retrievedContext: contextBlocks,
+        contextLabel,
         history,
       })
 
@@ -52,4 +55,4 @@ const createChatService = (): ChatService => {
 }
 
 export const chatService = createChatService()
-export type { ChatHistoryEntry } from './types'
+export type { ChatHistoryEntry, ChatContextMode } from './types'

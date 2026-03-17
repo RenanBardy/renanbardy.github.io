@@ -1,19 +1,45 @@
 [
   {
-    "id": "5e3fac9a1bbc",
-    "kind": "experience",
-    "title": "Experiências profissionais",
+    "id": "fe206f9a6203",
+    "kind": "project",
+    "title": "AI experimentation project",
     "tags": [
-      "experiencia",
-      "carreira",
-      "atuacao"
+      "project",
+      "ai",
+      "experimentation"
     ],
-    "text": "Experience\nOne of my personal project that I developed to learn and test some technologies is a\nservice that can measure a ring size with the picture of a hand. It has been developed with\nPython, NumPy, OpenCV, Machine Learning techniques to reduce the system error and\nDocker. The main idea in the first moment, is to simplify the digital sales for rings, and then,\nto start measuring any image with some point of reference. At now, this service can already\ncalculate the ring size with a coin as reference with an error about 2mm, so I considered a\nmachine learning model to try to reduce that error.\nDisclaimer: This project was developed some time ago purely for educational purposes.\nThe intention behind mentioning it here is to convey my deep appreciation for image\nprocessing and AI platforms, despite not actively working with these technologies at\npresent.",
-    "priority": 2,
+    "text": "One of the personal projects I developed to learn and experiment with new technologies is a service that estimates ring size from a photo of a hand.\n\nIt was built using Python, NumPy, OpenCV, Docker, and machine learning techniques aimed at reducing measurement error. The initial goal was to simplify the online purchase of rings, and later to explore how to measure objects in images using a known reference point.",
+    "priority": 0,
     "source": "content/experiences.md"
   },
   {
-    "id": "2d85ce2493eb",
+    "id": "41fcf9422d03",
+    "kind": "project",
+    "title": "AI experimentation project",
+    "tags": [
+      "project",
+      "ai",
+      "experimentation"
+    ],
+    "text": "to measure objects in images using a known reference point.\n\nAt this stage, the service is able to estimate ring size using a coin as a reference, with an error margin of around 2 mm. To improve accuracy, I also explored the use of machine learning models.",
+    "priority": 0,
+    "source": "content/experiences.md"
+  },
+  {
+    "id": "c372d67ea0a4",
+    "kind": "project",
+    "title": "AI experimentation project",
+    "tags": [
+      "project",
+      "ai",
+      "experimentation"
+    ],
+    "text": "ccuracy, I also explored the use of machine learning models.\n\nDisclaimer: This project was developed some time ago purely for educational purposes. I mention it here to reflect my strong interest in image processing and AI platforms, even though I am not currently working directly with these technologies.",
+    "priority": 0,
+    "source": "content/experiences.md"
+  },
+  {
+    "id": "8d15719b61b4",
     "kind": "profile",
     "title": "Perfil profissional",
     "tags": [
@@ -21,12 +47,25 @@
       "resumo",
       "carreira"
     ],
-    "text": "Profile\nI’m a software engineer from Brazil, living in São Paulo, and I’m available to work all over\nthe world. The main focus of my career is Front end development in the web environment.\nIn my career, I had the opportunity to work with front-end and back-end (API RPC/REST\nand micro-services) and some projects as a team leader.",
+    "text": "Presentation:\nI’m a software engineer from Brazil, living in São Paulo, and I’m available to work all over\nthe world. The main focus of my career is Front-end development in the web environment.\nIn my career, I had the opportunity to work with front-end and back-end (API RPC/REST\nand micro-services).\nI'm currently working as a Senior Front-end engineer at Silex Partners, leading a web platform\ndevelopement of a Wealth Manager panel to present financial data and guide our users to take\nright decisions",
     "priority": 1,
     "source": "content/profile.md"
   },
   {
-    "id": "f8ebaa477989",
+    "id": "88f3e855c005",
+    "kind": "profile",
+    "title": "Perfil profissional",
+    "tags": [
+      "perfil",
+      "resumo",
+      "carreira"
+    ],
+    "text": "Education:\nFIAP University, São Paulo, Brazil — Computer engineering, 2014 - 2018",
+    "priority": 1,
+    "source": "content/profile.md"
+  },
+  {
+    "id": "55871286bc96",
     "kind": "project",
     "title": "Projetos e iniciativas",
     "tags": [
@@ -34,20 +73,85 @@
       "portfolio",
       "produtos"
     ],
-    "text": "WEB SOFTWARE ENGINEER AT SILEX PARTNERS (SWITZERLAND) - JAN 2021 - CURRENT POSITION\nAt Silex, I hold the position of Lead Frontend Engineer, specializing in technologies such\nas Next.js, React.js, Node.js, CSS, JavaScript, Cypress, MongoDB, and Redis, among others.\nMy role encompasses oversight of crucial updates within our web infrastructure. A project\nthat stands out for me, and which I take great pride in, is the development of \"my_SPARK,\"\nan investment platform designed to enhance our clients' interaction with their portfolios. It\nemphasizes a user-centered design and interface, aiding investors in making informed\ndecisions with greater clarity and accuracy. This platform integrates with numerous internal\nservices, serving as a bridge for various functionalities such as PDF generation, price\nconsultation, chart visualizations, and account management. Our technology team is\ncommitted to pioneering new initiatives and exploring innovative technologies, all while\nmaintaining the utmost stability of our systems.\nhttps://www.silex-partners.com/\nSOFTWARE ENGINEER AT NUMBRS (SWITZERLAND) - JUN 2018 - DEZ 2020\nAt Numbrs, I serve as a Full-Stack Engineer, with my expertise spanning technologies\nincluding React.js, Node.js, Postcss, Stylus, JavaScript, Nginx, Jenkins, Jest, Cypress, and\nRedis, to name a few. My responsibilities include leading significant updates across our\nweb architecture. Among the projects I've contributed to, I'm particularly proud of the\ndevelopment of the current webview within the Numbrs App. This feature facilitates user\nauthentication through our banking integrations. Currently, I'm engaged in designing an\nenhanced version of this webview, focusing on template customization and the adoption\nof an improved continuous integration and delivery (CI/CD) strategy. This upgrade aims to\naugment testability through comprehensive integration, end-to-end, and unit testing,\nemploying pre-react as the DOM library to streamline these processes.\nSOFTWARE ENGINEER AT HUMMINGBIRD (BRAZIL) - NOV 2016 - MARCH 2018\nDuring my time at this consulting firm, I played dual roles as both a frontend and backend\ndeveloper, leveraging an impressive range of programming languages and technologies\nsuch as JavaScript, Python, React.js, Node.js, Redis, ElasticSearch, Docker, AWS, Google\nCloud, among others..\nA standout project in my portfolio is the architectural redesign of Nextel's web presence,\nwhere I served as both a web developer and technical lead for a scrum team. The\ntechnologies at the core of this project included React.js, Node.js, Redis, ElasticSearch,\nMongoDB, and AWS services like SQS and SES. This project not only marked a significant\nsales increase but also emerged as the company's most triumphant case study. Over the\ncourse of nearly a year, I contributed to:\n• Design and development of a micro-service architecture to provide an API Rest to the\nmobile environments with high performance and scalability;\n• The creation of a Web Panel capable of managing client bonuses via a CSV file upload,\nsupporting up to 4 million users, and controlling mobile features through a feature\ntoggle system. This system enabled the marketing team to dynamically manage features\nand bonuses, adapting to market needs.\nFREELANCER — AUG 2015 - NOV 2016\nAs a freelancer I consolidated my skills in the web environment and worked with some\ngreat companies. I was exposed to many projects and I was able to have a huge\nprofessional evolution mainly in building small projects from scratch and manage them\nwith customer relations and business negotiation. I developed a lot of API with Node.js,\nNoSQL, Mysql and Cache system with Redis. I built some Website with Node.js, Python as\na router system, PHP, Stylus, Webpack, Angular 1.x, Redux and also React.js with some\ninteresting techniques as mobile first. To deploy these projects I used to use some basics\nDevOps techniques such as setting up a proxy reverse with Nginx to expose my APIs.\nBACKEND DEVELOPER AT UPPERERP — NOV 2014 - AGO 2015\nI was responsible for the backend development but I helped the front-end team in some\nsituations. We used to develop in PHP 5.x with Laravel Frameworks and MySQL in the\nbackend and in the frontend our stack was HTML5, CSS3 with SASS, Javascript and jQuery.\nFRONTEND DEVELOPER — APR 2014 - NOV 2014\nI used to create some projects on the web using CSS, HTML5, Javascript, jQuery, PHP,\nMysql, Wordpress, Magento and more.\nFRONTEND DEVELOPER — OUT 2012 - MAR 2014\nI developed some simple website.",
+    "text": "WEB SOFTWARE ENGINEER AT SILEX PARTNERS (SWITZERLAND) - JAN 2021 - CURRENT POSITION\nAt Silex, I hold the position of Lead Frontend Engineer, specializing in technologies such\nas Next.js, React.js, Node.js, CSS, JavaScript, Cypress, MongoDB, and Redis, among others.\nMy role encompasses oversight of crucial updates within our web infrastructure. A project\nthat stands out for me, and which I take great pride in, is the development of \"my_SPARK,\"\nan investment platform designed to enhance our clients' interaction with their portfolios. It\nemphasizes a user-centered design and interface, aiding investors in making informed\ndecisions with greater clarity and accuracy. This platform integrates with numerous internal\nservices, serving as a bridge for various functionalities such as PDF generation, price\nconsultation, chart visualizations, and account management. Our technology team is\ncommitted to pioneering new initiatives and exploring innovative technologies, all while\nmaintaining the utmost stability of our systems.\nhttps://www.silex-partners.com/",
     "priority": 2,
     "source": "content/projects.md"
   },
   {
-    "id": "1bd228823881",
+    "id": "68c197f5524a",
+    "kind": "project",
+    "title": "Projetos e iniciativas",
+    "tags": [
+      "projetos",
+      "portfolio",
+      "produtos"
+    ],
+    "text": "SOFTWARE ENGINEER AT NUMBRS (SWITZERLAND) - JUN 2018 - DEZ 2020 At Numbrs, I served as a Full-Stack Engineer, with my expertise spanning technologies\nincluding React.js, Node.js, Postcss, Stylus, JavaScript, Nginx, Jenkins, Jest, Cypress, and\nRedis, to name a few. My responsibilities include leading significant updates across our\nweb architecture. Among the projects I've contributed to, I'm particularly proud of the\ndevelopment of the current webview within the Numbrs App. This feature facilitates user\nauthentication through our banking integrations. During that period, I was engaged in designing an\nenhanced version of this webview, focusing on template customization and the adoption\nof an improved continuous integration and delivery (CI/CD) strategy. This upgrade aims to\naugment testability through comprehensive integration, end-to-end, and unit testing,\nemploying pre-react as the DOM library to streamline these processes.",
+    "priority": 2,
+    "source": "content/projects.md"
+  },
+  {
+    "id": "d787ae063f15",
+    "kind": "project",
+    "title": "Projetos e iniciativas",
+    "tags": [
+      "projetos",
+      "portfolio",
+      "produtos"
+    ],
+    "text": "SOFTWARE ENGINEER AT HUMMINGBIRD (BRAZIL) - NOV 2016 - MARCH 2018 During my time at this consulting firm, I played dual roles as both a frontend and backend\ndeveloper, leveraging an impressive range of programming languages and technologies\nsuch as JavaScript, Python, React.js, Node.js, Redis, ElasticSearch, Docker, AWS, Google\nCloud, among others..\nA standout project in my portfolio is the architectural redesign of Nextel's web presence,\nwhere I served as both a web developer and technical lead for a scrum team. The\ntechnologies at the core of this project included React.js, Node.js, Redis, ElasticSearch,\nMongoDB, and AWS services like SQS and SES. This project not only marked a significant\nsales increase but also emerged as the company's most triumphant case study. Over the\ncourse of nearly a year, I contributed to:\n• Design and development of a micro-service architecture to provide an API Rest to the\nmobile environments with high performance and scalability;\n• The creation of a Web Panel capable of managing client bonuses via a CSV file upload,\nsupporting up to 4 million users, and controlling mobile features through a feature\ntoggle system. This system enabled the marketing team to dynamically manage features\nand bonuses, adapting to market needs.",
+    "priority": 2,
+    "source": "content/projects.md"
+  },
+  {
+    "id": "39c6ecaaa5b4",
+    "kind": "project",
+    "title": "Projetos e iniciativas",
+    "tags": [
+      "projetos",
+      "portfolio",
+      "produtos"
+    ],
+    "text": "FREELANCER — AUG 2015 - NOV 2016 As a freelancer I consolidated my skills in the web environment and worked with some\ngreat companies. I was exposed to many projects and I was able to have a huge\nprofessional evolution mainly in building small projects from scratch and manage them\nwith customer relations and business negotiation. I developed a lot of API with Node.js,\nNoSQL, Mysql and Cache system with Redis. I built some Website with Node.js, Python as\na router system, PHP, Stylus, Webpack, Angular 1.x, Redux and also React.js with some\ninteresting techniques as mobile first. To deploy these projects I used to use some basics\nDevOps techniques such as setting up a proxy reverse with Nginx to expose my APIs.",
+    "priority": 2,
+    "source": "content/projects.md"
+  },
+  {
+    "id": "6a5ac5d2bbc9",
+    "kind": "project",
+    "title": "Projetos e iniciativas",
+    "tags": [
+      "projetos",
+      "portfolio",
+      "produtos"
+    ],
+    "text": "BACKEND DEVELOPER AT UPPERERP — NOV 2014 - AGO 2015 I was responsible for the backend development but I helped the front-end team in some\nsituations. We used to develop in PHP 5.x with Laravel Frameworks and MySQL in the\nbackend and in the frontend our stack was HTML5, CSS3 with SASS, Javascript and jQuery.",
+    "priority": 2,
+    "source": "content/projects.md"
+  },
+  {
+    "id": "64d7f99e0328",
+    "kind": "project",
+    "title": "Projetos e iniciativas",
+    "tags": [
+      "projetos",
+      "portfolio",
+      "produtos"
+    ],
+    "text": "our stack was HTML5, CSS3 with SASS, Javascript and jQuery.\n\nFRONTEND DEVELOPER — APR 2014 - NOV 2014 I used to create some projects on the web using CSS, HTML5, Javascript, jQuery, PHP,\nMysql, Wordpress, Magento and more.\n\nFRONTEND DEVELOPER — OUT 2012 - MAR 2014 I developed some simple website.",
+    "priority": 2,
+    "source": "content/projects.md"
+  },
+  {
+    "id": "eae395d5233a",
     "kind": "skill",
-    "title": "Skills e conhecimentos",
+    "title": "Skills and Knowledge",
     "tags": [
       "skills",
       "stack",
-      "conhecimentos"
+      "knowledge"
     ],
-    "text": "React.js, Typescript, Node.js,",
+    "text": "Frontend: React.js, TypeScript, Styled-components, Design-systems, CSS, HTML5, WebAssembly, WebWorkers  \nBackend: Node.js, Next.js, Express.js, Python\nAI / ML: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), prompt engineering, context grounding, hallucination mitigation, machine learning  \nProgramming / Tools: Docker, CI/CD\nComputer Vision / Data: NumPy, OpenCV, image processing  \nQA: Playwright, Jest",
     "priority": 3,
     "source": "content/skills.md"
   }

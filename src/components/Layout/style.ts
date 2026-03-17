@@ -6,6 +6,7 @@ export const Page = styled.main`
 
 export const LayoutShell = styled.div`
   max-width: 920px;
+  width: 100%;
   height: calc(100vh - 48px);
   margin: 0 auto;
 `
@@ -32,6 +33,7 @@ export const Header = styled.div`
     color: var(--color-text-secondary);
     transition: color 0.4s ease;
     display: flex;
+    position: relative;
     align-items: center;
     width: 16px;
     height: 16px;

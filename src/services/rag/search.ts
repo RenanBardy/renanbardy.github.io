@@ -15,6 +15,7 @@ export const searchRagIndex = async ({
   const queryVector = await createQueryEmbedding(query)
   const results = rankChunks({
     chunks: index.chunks,
+    query,
     queryVector,
     chunkVectors: index.vectors,
     topK: options.topK ?? constants.RAG_SEARCH_DEFAULTS.topK,
