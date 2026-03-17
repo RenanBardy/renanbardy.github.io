@@ -5,8 +5,8 @@ tags: [perfil, resumo, carreira]
 priority: 1
 ---
 
-Sou Renan Bardy, profissional de tecnologia com foco em produto, engenharia de software e uso prático de IA em experiências digitais.
-
-Atuo na interseção entre desenvolvimento de software, arquitetura de frontend e construção de produtos orientados a valor.
-
-Tenho interesse em criar interfaces claras, sistemas sustentáveis e soluções que consigam sair da ideia para uma entrega funcional com qualidade.
+Profile
+I’m a software engineer from Brazil, living in São Paulo, and I’m available to work all over
+the world. The main focus of my career is Front end development in the web environment.
+In my career, I had the opportunity to work with front-end and back-end (API RPC/REST
+and micro-services) and some projects as a team leader.

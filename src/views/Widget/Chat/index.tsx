@@ -7,6 +7,13 @@ import type { ChatMessage } from '@/types/chat'
 const formatProgress = (label: string | undefined) =>
   label ? label.replace(/\s+/g, ' ').trim() : 'carregando'
 
+const defaultQuestions = [
+  'List me your skills?',
+  'What are you currently working on?',
+  'What are your education?',
+  'What are your hobbies?',
+]
+
 const createMessage = (
   role: 'user' | 'assistant',
   content: string,
@@ -131,8 +138,9 @@ export const Chat: FC = () => {
   }
 
   return (
-    <Layout title="Renan Bardy">
+    <Layout>
       <ChatPanel
+        defaultQuestions={defaultQuestions}
         messages={messages}
         input={input}
         isSending={isSending}

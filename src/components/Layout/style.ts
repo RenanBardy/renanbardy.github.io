@@ -1,28 +1,47 @@
 import styled from 'styled-components'
 
 export const Page = styled.main`
-  min-height: 100vh;
-  padding: 32px 20px 48px;
-  background:
-    radial-gradient(circle at top left, rgba(217, 119, 6, 0.16), transparent 30%),
-    radial-gradient(circle at top right, rgba(15, 118, 110, 0.16), transparent 28%),
-    linear-gradient(180deg, #f8f4ec 0%, #f1ece3 100%);
-  color: #1f2937;
+  height: 100vh;
 `
 
 export const LayoutShell = styled.div`
   max-width: 920px;
+  height: calc(100vh - 48px);
   margin: 0 auto;
 `
 
-export const Hero = styled.header`
-  display: grid;
-  gap: 10px;
-  margin-bottom: 24px;
+export const Header = styled.div`
+  width: max-content;
+  background: #000;
+  align-self: center;
+  justify-self: center;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: calc(var(--border-radius) * 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0.2;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+  a {
+    color: var(--color-text-secondary);
+    transition: color 0.4s ease;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+    &:hover {
+      color: var(--color-text-primary);
+    }
+  }
 `
 
-export const Title = styled.h1`
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 3.4rem);
-  font-family: 'Playfair Display', serif;
-`

@@ -2,8 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
  :root {
-  --color-text: #1f2937;
-  --color-background: #f6f1e8;
+  --background-color: #212121;
+  --background-color-secondary: rgba(50, 50, 50, 0.85);
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #8e8e9f;
   --font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
   --border-radius: 8px;
  }
@@ -12,9 +14,11 @@ export const GlobalStyles = createGlobalStyle`
  body {
    padding: 0;
    margin: 0;
-   min-height: 100%;
+   height: 100vh;
+   overflow: hidden;
    font-family: var(--font-family);
-   background-color: var(--color-background);
+   background-color: var(--background-color);
+   color: var(--color-text-primary);
  }
 
  #root {

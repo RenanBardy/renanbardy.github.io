@@ -10,12 +10,14 @@ import {
   MessageMeta,
   Composer,
   TextArea,
-  Actions
+  Actions,
+  DefaultQuestions
 } from './style'
 
 
 
 export const ChatPanel: FC<{
+  defaultQuestions: string[]
   messages: ChatMessage[]
   input: string
   isSending: boolean
@@ -26,6 +28,7 @@ export const ChatPanel: FC<{
   onSubmit: (event: FormEvent) => void
   onReset: () => void
 }> = ({
+  defaultQuestions,
   messages,
   input,
   isSending,
@@ -44,7 +47,7 @@ export const ChatPanel: FC<{
       <MessageList ref={messageListRef}>
         {messages.length === 0 ? (
           <EmptyState>
-            Ask me anything about my professional career, projects, skills or context.
+            Hello, I'm Renan Bardy<small>You can ask me anything about my professional career, projects, skills or context.</small>
           </EmptyState>
         ) : null}
 
@@ -59,8 +62,16 @@ export const ChatPanel: FC<{
           </MessageCard>
         ))}
       </MessageList>
-      {chatStatus && chatStatus !== 'ready' ? <Hint>{chatStatus}</Hint> : null}
       <Composer onSubmit={onSubmit}>
+        {(chatStatus && chatStatus !== 'ready') ? <Hint>{chatStatus}</Hint> : null}
+        <DefaultQuestions>
+          <div className="title">Suggestions:</div>
+          {defaultQuestions.map((question) => (
+            <div key={question} className="item" onClick={() => onInputChange(question)}>
+              {question}
+            </div>
+          ))}
+        </DefaultQuestions>
         <TextArea onKeyDown={(e) => {
           if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault()

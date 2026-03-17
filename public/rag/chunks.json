@@ -1,6 +1,6 @@
 [
   {
-    "id": "f75f4dda0952",
+    "id": "5e3fac9a1bbc",
     "kind": "experience",
     "title": "Experiências profissionais",
     "tags": [
@@ -8,12 +8,12 @@
       "carreira",
       "atuacao"
     ],
-    "text": "Minha trajetória profissional está ligada à criação de aplicações web e produtos digitais.\n\nTenho experiência em desenvolvimento frontend com React e TypeScript, definição de arquitetura de aplicações e organização de código para evolução contínua.\n\nTambém atuo na integração de capacidades de IA em produtos, avaliando trade-offs de performance, privacidade, custo e experiência de uso.",
+    "text": "Experience\nOne of my personal project that I developed to learn and test some technologies is a\nservice that can measure a ring size with the picture of a hand. It has been developed with\nPython, NumPy, OpenCV, Machine Learning techniques to reduce the system error and\nDocker. The main idea in the first moment, is to simplify the digital sales for rings, and then,\nto start measuring any image with some point of reference. At now, this service can already\ncalculate the ring size with a coin as reference with an error about 2mm, so I considered a\nmachine learning model to try to reduce that error.\nDisclaimer: This project was developed some time ago purely for educational purposes.\nThe intention behind mentioning it here is to convey my deep appreciation for image\nprocessing and AI platforms, despite not actively working with these technologies at\npresent.",
     "priority": 2,
     "source": "content/experiences.md"
   },
   {
-    "id": "35635ce5ac99",
+    "id": "2d85ce2493eb",
     "kind": "profile",
     "title": "Perfil profissional",
     "tags": [
@@ -21,12 +21,12 @@
       "resumo",
       "carreira"
     ],
-    "text": "Sou Renan Bardy, profissional de tecnologia com foco em produto, engenharia de software e uso prático de IA em experiências digitais.\n\nAtuo na interseção entre desenvolvimento de software, arquitetura de frontend e construção de produtos orientados a valor.\n\nTenho interesse em criar interfaces claras, sistemas sustentáveis e soluções que consigam sair da ideia para uma entrega funcional com qualidade.",
+    "text": "Profile\nI’m a software engineer from Brazil, living in São Paulo, and I’m available to work all over\nthe world. The main focus of my career is Front end development in the web environment.\nIn my career, I had the opportunity to work with front-end and back-end (API RPC/REST\nand micro-services) and some projects as a team leader.",
     "priority": 1,
     "source": "content/profile.md"
   },
   {
-    "id": "40cc1d115e88",
+    "id": "f8ebaa477989",
     "kind": "project",
     "title": "Projetos e iniciativas",
     "tags": [
@@ -34,12 +34,12 @@
       "portfolio",
       "produtos"
     ],
-    "text": "Participei da construção de interfaces e aplicações web com foco em experiência de usuário, organização técnica e clareza de manutenção.\n\nTambém exploro projetos pessoais voltados a IA aplicada no cliente, incluindo experiências com inferência local no navegador, RAG estático e fluxos sem backend.\n\nTenho interesse especial em projetos que combinam autonomia local, privacidade e distribuição simples.",
+    "text": "WEB SOFTWARE ENGINEER AT SILEX PARTNERS (SWITZERLAND) - JAN 2021 - CURRENT POSITION\nAt Silex, I hold the position of Lead Frontend Engineer, specializing in technologies such\nas Next.js, React.js, Node.js, CSS, JavaScript, Cypress, MongoDB, and Redis, among others.\nMy role encompasses oversight of crucial updates within our web infrastructure. A project\nthat stands out for me, and which I take great pride in, is the development of \"my_SPARK,\"\nan investment platform designed to enhance our clients' interaction with their portfolios. It\nemphasizes a user-centered design and interface, aiding investors in making informed\ndecisions with greater clarity and accuracy. This platform integrates with numerous internal\nservices, serving as a bridge for various functionalities such as PDF generation, price\nconsultation, chart visualizations, and account management. Our technology team is\ncommitted to pioneering new initiatives and exploring innovative technologies, all while\nmaintaining the utmost stability of our systems.\nhttps://www.silex-partners.com/\nSOFTWARE ENGINEER AT NUMBRS (SWITZERLAND) - JUN 2018 - DEZ 2020\nAt Numbrs, I serve as a Full-Stack Engineer, with my expertise spanning technologies\nincluding React.js, Node.js, Postcss, Stylus, JavaScript, Nginx, Jenkins, Jest, Cypress, and\nRedis, to name a few. My responsibilities include leading significant updates across our\nweb architecture. Among the projects I've contributed to, I'm particularly proud of the\ndevelopment of the current webview within the Numbrs App. This feature facilitates user\nauthentication through our banking integrations. Currently, I'm engaged in designing an\nenhanced version of this webview, focusing on template customization and the adoption\nof an improved continuous integration and delivery (CI/CD) strategy. This upgrade aims to\naugment testability through comprehensive integration, end-to-end, and unit testing,\nemploying pre-react as the DOM library to streamline these processes.\nSOFTWARE ENGINEER AT HUMMINGBIRD (BRAZIL) - NOV 2016 - MARCH 2018\nDuring my time at this consulting firm, I played dual roles as both a frontend and backend\ndeveloper, leveraging an impressive range of programming languages and technologies\nsuch as JavaScript, Python, React.js, Node.js, Redis, ElasticSearch, Docker, AWS, Google\nCloud, among others..\nA standout project in my portfolio is the architectural redesign of Nextel's web presence,\nwhere I served as both a web developer and technical lead for a scrum team. The\ntechnologies at the core of this project included React.js, Node.js, Redis, ElasticSearch,\nMongoDB, and AWS services like SQS and SES. This project not only marked a significant\nsales increase but also emerged as the company's most triumphant case study. Over the\ncourse of nearly a year, I contributed to:\n• Design and development of a micro-service architecture to provide an API Rest to the\nmobile environments with high performance and scalability;\n• The creation of a Web Panel capable of managing client bonuses via a CSV file upload,\nsupporting up to 4 million users, and controlling mobile features through a feature\ntoggle system. This system enabled the marketing team to dynamically manage features\nand bonuses, adapting to market needs.\nFREELANCER — AUG 2015 - NOV 2016\nAs a freelancer I consolidated my skills in the web environment and worked with some\ngreat companies. I was exposed to many projects and I was able to have a huge\nprofessional evolution mainly in building small projects from scratch and manage them\nwith customer relations and business negotiation. I developed a lot of API with Node.js,\nNoSQL, Mysql and Cache system with Redis. I built some Website with Node.js, Python as\na router system, PHP, Stylus, Webpack, Angular 1.x, Redux and also React.js with some\ninteresting techniques as mobile first. To deploy these projects I used to use some basics\nDevOps techniques such as setting up a proxy reverse with Nginx to expose my APIs.\nBACKEND DEVELOPER AT UPPERERP — NOV 2014 - AGO 2015\nI was responsible for the backend development but I helped the front-end team in some\nsituations. We used to develop in PHP 5.x with Laravel Frameworks and MySQL in the\nbackend and in the frontend our stack was HTML5, CSS3 with SASS, Javascript and jQuery.\nFRONTEND DEVELOPER — APR 2014 - NOV 2014\nI used to create some projects on the web using CSS, HTML5, Javascript, jQuery, PHP,\nMysql, Wordpress, Magento and more.\nFRONTEND DEVELOPER — OUT 2012 - MAR 2014\nI developed some simple website.",
     "priority": 2,
     "source": "content/projects.md"
   },
   {
-    "id": "503ffb9b1804",
+    "id": "1bd228823881",
     "kind": "skill",
     "title": "Skills e conhecimentos",
     "tags": [
@@ -47,7 +47,7 @@
       "stack",
       "conhecimentos"
     ],
-    "text": "Minhas skills incluem React, TypeScript, Vite, arquitetura frontend, componentização, modelagem de interfaces e integração de LLMs em aplicações web.\n\nTenho familiaridade com criação de SPAs, organização de estado de interface, design systems leves e workflows de build.\n\nTambém trabalho com análise pragmática de requisitos, definição de escopo técnico e implementação incremental de produto.",
+    "text": "React.js, Typescript, Node.js,",
     "priority": 3,
     "source": "content/skills.md"
   }
